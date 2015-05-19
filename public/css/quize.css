@@ -73,6 +73,14 @@
   border: 1px solid #3c9a43;
   min-height: 200px;
   background-color: #fff;
+  padding: 20px;
+  font-size: 16px;
+}
+.question-box .num{
+  font-size: 24px;
+  font-weight: 600;
+  color: #2D7632;
+  margin-bottom: 5px;
 }
 .answer-box{
   font-size: 0px;
@@ -97,6 +105,13 @@
   background-color: #fff;
   min-height: 60px;
   margin-bottom: 20px;
+  text-align: left;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+.answer .inner label{
+  padding-left: 30px;
+  font-size: 16px;
 }
 
 #footer{
