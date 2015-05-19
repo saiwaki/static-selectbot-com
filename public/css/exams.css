@@ -1,5 +1,6 @@
 .exams-content{
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* exams-index */
@@ -83,6 +84,14 @@
 }
 .new .exams-element.time .form-control{
   width: 20%;
+}
+.new .exams-element.num .form-control{
+  width: 20%;
+}
+.new .exams-content .new-btn{
+  width: 40%;
+  margin: 0 auto;
+  font-size: 18px;
 }
 
 input[type=radio],

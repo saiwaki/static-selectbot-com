@@ -89,6 +89,9 @@ th, td{
   height: 60px;
   font-size: 24px;
 }
+#header .header-left a{
+  color: #333;
+}
 #header .header-right{
   width: auto;
   height: 60px;
