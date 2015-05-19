@@ -1,0 +1,172 @@
+.exams-content{
+  padding-top: 30px;
+}
+
+/* exams-index */
+
+.index input[type="search"]{
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+  padding-left: 35px;
+  width: 50%;
+}
+.index select.form-control{
+  width: 120px;
+}
+.index .exams-table{
+  margin-top: 30px;
+}
+.index .exams-table tr:nth-child(2n){
+  background-color: #f8f8f8;
+}
+.index .exams-table th{
+  padding: 4px 0;
+}
+.index .exams-table td{
+  padding: 10px;
+  text-align: center;
+}
+.index .exams-table .date{
+  width: 10%;
+}
+.index .exams-table .test-title{
+  text-align: left;
+  width: 40%;
+}
+.index .exams-table .category{
+  width: 20%;
+}
+.index .exams-table .examinee{
+  width: 7%;
+}
+.index .exams-table .mode{
+  width: 10%;
+}
+.index .exams-table .time{
+  width: 7%;
+}
+.index .examinee .num{
+  width: 6%;
+}
+.index .no-test{
+  text-align: center;
+}
+.index .no-test td{
+  padding: 25px 0px;
+}
+.index .no-test .text{
+  margin-bottom: 10px;
+}
+.index .no-test .new-btn{
+  display: inline-block;
+}
+
+/* exams-new */
+
+.new .label{
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 5px;
+}
+.new .exams-element{
+  margin-bottom: 30px;
+}
+.new .template-box{
+  border: 1px solid #ccc;
+  padding: 20px 20px 10px;
+}
+.new .template-box .template{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.new .exams-element.time .form-control{
+  width: 20%;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    display: inline-block;
+    margin-right: 6px;
+}
+input[type=radio] + label,
+input[type=checkbox] + label {
+    position: relative;
+    display: inline-block;
+    margin-right: 18px;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+@media (min-width: 1px) {
+    input[type=radio],
+    input[type=checkbox] {
+        display: none;
+        margin: 0;
+    }
+    input[type=radio] + label,
+    input[type=checkbox] + label {
+        padding: 0 0 0 24px;
+    }
+    input[type=radio] + label::before,
+    input[type=checkbox] + label::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        width: 18px;
+        height: 18px;
+        margin-top: -9px;
+
+        background: #FFF;
+    }
+    input[type=radio] + label::before {
+        border: 2px solid #ccc;
+        border-radius: 30px;
+    }
+    input[type=checkbox] + label::before {
+        border: 2px solid #ccc;
+    }
+    input[type=checkbox]:disabled + label::before {
+      border: 2px solid #eee;
+    }
+    input[type=checkbox]:disabled + label{
+      color: #aaa;
+    }
+    input[type=radio]:checked + label::after,
+    input[type=checkbox]:checked + label::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+    }
+    input[type=radio]:checked + label::after {
+        left: 5px;
+
+        width: 8px;
+        height: 8px;
+        margin-top: -4px;
+
+        background: #009ee7;
+        border-radius: 8px;
+    }
+    input[type=checkbox]:checked + label::after {
+        left: 3px;
+        width: 16px;
+        height: 8px;
+        margin-top: -8px;
+        border-left: 3px solid #009ee7;
+        border-bottom: 3px solid #009ee7;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}

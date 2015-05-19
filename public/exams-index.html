@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>selectbot</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/exams.css">
+  <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body class="exams index">
+  <div id="wrapper">
+    <header id="header">
+      <nav class="content">
+        <div class="header-left table left">
+          <div class="table-cell">
+            selectbot
+          </div>
+        </div>
+        <div class="header-right table right">
+          <div class="table-cell">
+            <a href="exams-new.html" class="new-btn">
+              <i class="fa fa-plus"></i> 新規テスト
+            </a>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </nav>
+    </header>
+    <div id="main">
+      <div class="content">
+        <div class="exams-content">
+          <div class="exams-filter">
+            <input type="search" class="form-control left">
+            <select class="form-control right">
+              <option>新着順</option>
+              <option>古い順</option>
+              <option>タイトル順</option>
+              <option>受験者数順</option>
+            </select>
+            <div class="clear"></div>
+          </div>
+          <table class="exams-table">
+            <tbody>
+              <tr>
+                <th>日付</th>
+                <th>テストのタイトル</th>
+                <th>カテゴリー</th>
+                <th>受験者数</th>
+                <th>モード</th>
+                <th>制限時間</th>
+                <th>設問数</th>
+              </tr>
+              <tr class="no-test">
+                <td colspan="7">
+                  <div class="text">
+                    テストはありません。テストを作成してください。
+                  </div>
+                  <a href="exams-new.html" class="new-btn">新規テストを作成する</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="date">
+                  2015.05.17
+                </td>
+                <td class="test-title">
+                  <a href="">(株)ダラフのWEBエンジニアのツールスタック確認テスト</a>
+                </td>
+                <td class="category">Rails, Backbone, AWS</td>
+                <td class="examinee">8人</td>
+                <td class="mode">試験モード</td>
+                <td class="time">30分</td>
+                <td class="num">30問</td>
+              </tr>
+              <tr>
+                <td class="date">
+                  2015.05.17
+                </td>
+                <td class="test-title">
+                  <a href="">(株)ダラフのWEBエンジニアのツールスタック確認テスト</a>
+                </td>
+                <td class="category">Rails, Backbone, AWS</td>
+                <td class="examinee">8人</td>
+                <td class="mode">試験モード</td>
+                <td class="time">30分</td>
+                <td class="num">30問</td>
+              </tr>
+              <tr>
+                <td class="date">
+                  2015.05.17
+                </td>
+                <td class="test-title">
+                  <a href="">(株)ダラフのWEBエンジニアのツールスタック確認テスト</a>
+                </td>
+                <td class="category">Rails, Backbone, AWS</td>
+                <td class="examinee">8人</td>
+                <td class="mode">試験モード</td>
+                <td class="time">30分</td>
+                <td class="num">30問</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+    </div>
+  </div>
+</body>
+</html>
