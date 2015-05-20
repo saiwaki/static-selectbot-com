@@ -2,6 +2,11 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.label{
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 5px;
+}
 
 /* exams-index */
 
@@ -66,11 +71,6 @@
 
 /* exams-new */
 
-.new .label{
-  font-weight: 600;
-  color: #888;
-  margin-bottom: 5px;
-}
 .new .exams-element{
   margin-bottom: 30px;
 }
@@ -106,6 +106,87 @@
   margin-bottom: 10px;
 }
 .new .exams-content .new-btn{
+  width: 40%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* exams-edit */
+
+.edit .sub-header{
+  height: 45px;
+  border-bottom: 1px solid #ddd;
+}
+.edit .sub-header ul{
+  height: 45px;
+}
+.edit .sub-header li{
+  display: table;
+  float: left;
+  height: 45px;
+}
+.edit .sub-header li a{
+  display: table-cell;
+  vertical-align: middle;
+  color: #aaa;
+  font-weight: 600;
+  padding: 0px 15px;
+  font-size: 13px;
+}
+.edit .sub-header li a:hover{
+  color: #3c9a43;
+}
+.edit .sub-header li a.active{
+  color: #3c9a43;
+  position: relative;
+}
+.edit .sub-header li a.active:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #3c9a43;
+  left: 0;
+  bottom: -1px;
+}
+
+/* edit-information */
+
+.edit-information .exams-element{
+  margin-bottom: 30px;
+}
+.edit-information .template-box{
+  border: 1px solid #ccc;
+  padding: 20px 20px 10px;
+}
+.edit-information .template-box .template{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.edit-information .exams-element.time .form-control{
+  width: 20%;
+}
+.edit-information .exams-element.num .form-control{
+  width: 20%;
+}
+.edit-information .exams-element.message .form-control{
+  width: 50%;
+  max-width: 50%;
+  min-height: 100px;
+  max-height: 100px;
+}
+.edit-information .exams-element.info{
+  margin-bottom: 50px;
+}
+.edit-information .info-box{
+  border: 1px solid #ccc;
+  padding: 20px 20px 10px;
+}
+.edit-information .info-box .info{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.edit-information .exams-content .new-btn{
   width: 40%;
   margin: 0 auto;
   font-size: 18px;

@@ -4,26 +4,25 @@
   <title>selectbot</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="css/exams.css">
-  <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
-  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="../css/exams.css">
+  <script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </head>
-<body class="exams new">
+<body class="exams edit edit-information">
   <div id="wrapper">
     <header id="header">
       <nav class="content">
         <div class="header-left table left">
           <div class="table-cell">
-            <a href="exams-index.html">selectbot</a>
+            <a href="../exams-index.html">selectbot</a>
           </div>
         </div>
         <div class="header-right table right">
           <div class="table-cell">
-            <a href="exams-new.html" class="new-btn">
+            <a href="../exams-new.html" class="new-btn">
               <i class="fa fa-plus"></i> 新規テスト
             </a>
           </div>
@@ -31,41 +30,33 @@
         <div class="clear"></div>
       </nav>
     </header>
+    <div class="sub-header">
+      <div class="content">
+        <div class="sub-header-left left">
+          <ul>
+            <li><a href="quize.html">クイズを編集</a></li>
+            <li><a href="information.html" class="active">基本情報を編集</a></li>
+            <li><a href="statistics.html">結果・集計(8)</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="sub-header-right right">
+          <ul>
+            <li><a href="../exams-show.html" target="_blank">回答画面を表示</a></li>
+            <li><div class="table-cell">｜</div></li>
+            <li><a href="" OnClick='window.clipboardData.setData("http://selectbot.com/exams-show.html")'>リンクをコピー</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
     <div id="main">
       <div class="content">
         <div class="exams-content">
           <div class="exams-element title">
             <div class="label">テストのタイトル</div>
             <input type="text" class="form-control">
-          </div>
-          <div class="exams-element template">
-            <div class="label">テンプレートを組み合わせて利用する（3つまで選択可）</div>
-            <div class="template-box">
-              <div class="template">
-                <input type="checkbox" name="t1" value="rubyonrails" id="rubyonrails"><label for="rubyonrails">Ruby on Rails</label>
-              </div>
-              <div class="template">
-                <input type="checkbox" name="t2" value="ruby" id="ruby"><label for="ruby">Ruby</label>
-              </div>
-              <div class="template">
-                <input type="checkbox" name="t3" value="Haml" id="Haml"><label for="Haml">Haml</label>
-              </div>
-              <div class="template">
-                <input type="checkbox" name="t4" value="Sass" id="Sass"><label for="Sass">Sass</label>
-              </div>
-              <div class="template">
-                <input type="checkbox" name="t5" value="Backbone.js" id="Backbone.js"><label for="Backbone.js">Backbone.js</label>
-              </div>
-              <div class="template">
-                <input type="checkbox" name="t6" value="jQuery" id="jQuery"><label for="jQuery">jQuery</label>
-              </div>
-              <div class="template">
-                <input type="checkbox" name="t7" value="CoffeeScript" id="CoffeeScript"><label for="CoffeeScript">CoffeeScript</label>
-              </div>
-              <div class="template">
-                <input type="checkbox" name="t8" value="JavaScript" id="JavaScript"><label for="JavaScript">JavaScript</label>
-              </div>
-            </div>
           </div>
           <div class="exams-element mode">
             <div class="label">モード</div>
@@ -127,34 +118,12 @@
               </div>
             </div>
           </div>
-          <a href="exams-edit/quize.html" class="new-btn" align="center">作成する</a>
+          <a href="exams-edit/information.html" class="new-btn" align="center">保存する</a>
         </div>
       </div>
     </div>
     <div id="footer">
     </div>
   </div>
-  <script language="JavaScript">
-    $(".template input[type=checkbox]").click(function(){
-    var $count = $(".template input[type=checkbox]:checked").length;
-    var $not = $('.template input[type=checkbox]').not(':checked')
-
-    if($count >= 3) {
-        $not.attr("disabled",true);
-    }else{
-        $not.attr("disabled",false);
-    }
-    });
-  </script>
-  <script>
-    <!--
-    $( function() {
-        $( '.jquery-ui-sortable' ) . sortable( {
-            connectWith: '.jquery-ui-sortable'
-        } );
-        $( '.jquery-ui-sortable' ) . disableSelection();
-    } );
-    // -->
-  </script>
 </body>
 </html>
