@@ -182,9 +182,6 @@
     }
 
     $(function(){
-    $('.quize-content:not(body.quize .quize-content)').css({display:'block',marginLeft:$(window).width(),opacity:'0'});
-    $('.quize-content:not(body.quize .quize-content)').animate({marginLeft:'0px',opacity:'1'},700);
-
     $('body.quize .quize-content').css({display:'block',opacity:'0'});
     $('body.quize .quize-content').animate({opacity:'1'},700);
 
@@ -193,7 +190,7 @@
         $('.quize-content').animate({marginLeft:'-=' + $(window).width() + 'px',opacity:'0'},700,function(){
             location.href = pass;
             setTimeout(function(){
-                $('#container').css({marginLeft:'0',opacity:'1'})
+                $('.quize-content').css({marginLeft:'0',opacity:'1'})
             },700);
         });
         return false;

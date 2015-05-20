@@ -88,6 +88,23 @@
 .new .exams-element.num .form-control{
   width: 20%;
 }
+.new .exams-element.message .form-control{
+  width: 50%;
+  max-width: 50%;
+  min-height: 100px;
+  max-height: 100px;
+}
+.new .exams-element.info{
+  margin-bottom: 50px;
+}
+.new .info-box{
+  border: 1px solid #ccc;
+  padding: 20px 20px 10px;
+}
+.new .info-box .info{
+  display: inline-block;
+  margin-bottom: 10px;
+}
 .new .exams-content .new-btn{
   width: 40%;
   margin: 0 auto;
