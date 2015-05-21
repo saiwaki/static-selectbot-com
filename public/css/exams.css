@@ -191,3 +191,108 @@
   margin: 0 auto;
   font-size: 18px;
 }
+
+/* edit-insight */
+
+.edit-insight input[type="search"]{
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+  padding-left: 35px;
+  width: 50%;
+}
+.edit-insight select.form-control{
+  width: 120px;
+}
+.edit-insight table{
+  border: none;
+}
+.edit-insight .exams-users{
+  padding: 12px 0px;
+}
+.edit-insight .exams-users .exams-user-table{
+  border-collapse: separate;
+  border-spacing: 0px 12px;
+}
+.edit-insight td{
+  border: none;
+  text-align: center;
+  font-size: 13px;
+}
+.edit-insight td.date{
+  width: 10%;
+}
+.edit-insight td.user-img{
+  width: 8%;
+}
+.edit-insight td.user-img img{
+  display: block;
+  margin: 0 auto;
+}
+.edit-insight td.user-name{
+  text-align: left;
+  width: 12%;
+}
+.edit-insight td.user-email{
+  width: 24%;
+  text-align: left;
+}
+.edit-insight td.panswer{
+  width: 16%;
+  text-align: left;
+}
+.edit-insight td.danswer{
+  width: 30%;
+}
+.edit-insight td.danswer td{
+  border: 1px solid #ddd;
+  width: 5%;
+}
+.edit-insight td.danswer td.correct{
+  background-color: #3c9a43;
+}
+
+/* edit-insight-user */
+
+.edit-insight-user .breadcrumb{
+  font-size: 12px;
+}
+.edit-insight-user .breadcrumb li{
+  display: inline-block;
+}
+.edit-insight-user .breadcrumb li.angle-right{
+  margin: 0px 5px;
+  color: #888;
+}
+.edit-insight-user .user-insight .media{
+  margin-top: 20px;
+}
+.edit-insight-user .user-insight .media-left{
+  width: 120px;
+  padding-right: 20px;
+}
+.edit-insight-user .user-insight .answer-date{
+  color: #999;
+  margin-top: 5px;
+}
+.edit-insight-user .user-insight .name-email{
+  font-size: 20px;
+  margin: 2px 0px 20px;
+}
+.edit-insight-user .user-insight .panswer{
+  width: auto;
+  color: #3c9a43;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.edit-insight-user .user-insight .panswer .num{
+  font-size: 20px;
+  font-weight: 600;
+}
+.edit-insight-user .user-insight .danswer{
+  width: 50%;
+}
+.edit-insight-user .danswer td.correct{
+  background-color: #3c9a43;
+}

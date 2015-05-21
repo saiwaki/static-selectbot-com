@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>selectbot</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="../css/exams.css">
+  <script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</head>
+<body class="exams edit edit-insight-user">
+  <div id="wrapper">
+    <header id="header">
+      <nav class="content">
+        <div class="header-left table left">
+          <div class="table-cell">
+            <a href="../exams-index.html">selectbot</a>
+          </div>
+        </div>
+        <div class="header-right table right">
+          <div class="table-cell">
+            <a href="../exams-new.html" class="new-btn">
+              <i class="fa fa-plus"></i> 新規テスト
+            </a>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </nav>
+    </header>
+    <div class="sub-header">
+      <div class="content">
+        <div class="sub-header-left left">
+          <ul>
+            <li><a href="quize.html">クイズを編集</a></li>
+            <li><a href="information.html">基本情報を編集</a></li>
+            <li><a href="" class="active">結果・集計(8)</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="sub-header-right right">
+          <ul>
+            <li><a href="../exams-show.html" target="_blank">回答画面を表示</a></li>
+            <li><div class="table-cell">｜</div></li>
+            <li><a href="" OnClick='window.clipboardData.setData("http://selectbot.com/exams-show.html")'>リンクをコピー</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div id="main">
+      <div class="content">
+        <div class="exams-content">
+          <ul class="breadcrumb">
+            <li><a href="insight.html">すべての回答</a></li>
+            <li class="angle-right"><i class="fa fa-angle-right"></i></li>
+            <li class="active">斉脇一志(hitoshi.ee@gmail.com)</li>
+          </ul>
+          <div class="user-insight">
+            <div class="media">
+              <div class="media-left">
+                <img src="../img/saiwaki.jpg" width="120">
+              </div>
+              <div class="media-body">
+                <div class="answer-date">2015.5.20に回答しました。</div>
+                <div class="name-email">斉脇一志(hitoshi.ee@gmail.com)</div>
+                <div class="answer">
+                  <div class="panswer inline-block middle">正答率：<span class="num">80%</span>（16/20）</div>
+                  <div class="danswer inline-block middle">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td class="correct"></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+    </div>
+  </div>
+  <script type="text/javascript">
+    jQuery(function($){
+      //.rectの縦横比をレスポンシブに合わせて調整
+      function img_rect(){
+          var img_w = $(".danswer td").css("width");
+          $(".danswer td").css('height',img_w);
+      };
+      $(window).resize(function(){
+          img_rect();
+      });
+      img_rect();
+  });
+  </script>
+</body>
+</html>
