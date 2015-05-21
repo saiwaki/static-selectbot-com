@@ -23,6 +23,7 @@
 }
 .index .exams-table{
   margin-top: 30px;
+  font-size: 13px;
 }
 .index .exams-table tr:nth-child(2n){
   background-color: #f8f8f8;
@@ -295,4 +296,44 @@
 }
 .edit-insight-user .danswer td.correct{
   background-color: #3c9a43;
+}
+.edit-insight-user .quize-insight{
+  margin-top: 20px;
+}
+.edit-insight-user .quize-insight table{
+  font-size: 13px;
+}
+.edit-insight-user .quize-insight tr:nth-child(2n){
+  background-color: #f8f8f8;
+}
+.edit-insight-user .quize-insight th{
+  padding: 4px 0;
+}
+.edit-insight-user .quize-insight td{
+  text-align: center;
+  padding: 10px;
+}
+.edit-insight-user .quize-insight td.quize-num{
+  width: 6%;
+}
+.edit-insight-user .quize-insight td.question{
+  text-align: left;
+  width: 70%;
+}
+.edit-insight-user .quize-insight td.answer{
+  width: 8%;
+}
+.edit-insight-user .quize-insight td.correct-answer{
+  width: 8%;
+}
+.edit-insight-user .quize-insight td.errata{
+  width: 8%;
+}
+.edit-insight-user .quize-insight td.errata.ca{
+  color: #da3b30;
+  font-size: 18px;
+}
+.edit-insight-user .quize-insight td.errata.ia{
+  color: #888;
+  font-size: 18px;
 }
