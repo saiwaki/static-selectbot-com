@@ -125,9 +125,11 @@ th, td{
 #footer{
   position: absolute;
   bottom: 0;
-  height: 100px;
+  height: 80px;
   width: 100%;
   border-top: 1px solid #ccc;
+  background-color: #eee;
+  color: #888;
 }
 
 #page-top {
