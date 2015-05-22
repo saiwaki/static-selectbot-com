@@ -58,6 +58,908 @@
             <div class="label">テストのタイトル</div>
             <input type="text" class="form-control">
           </div>
+          <div role="tabpanel">
+            <!-- Nav tabs -->
+            <div class="nav-tabs-content">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="quize" class="active"><a href="#ruby" aria-controls="ruby" role="tab" data-toggle="tab">Ruby(10)</a></li>
+                <li role="quize"><a href="#backbone" aria-controls="backbone" role="tab" data-toggle="tab">Backbone.js(10)</a></li>
+                <li role="quize"><a href="#aws" aria-controls="aws" role="tab" data-toggle="tab">AWS(10)</a></li>
+                <div class="clear"></div>
+              </ul>
+            </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="ruby">
+                <div class="quizzes">
+                  <div class="quize">
+                    <div class="media question">
+                      <div class="media-left title">Q1 <i class="fa fa-arrow-right"></i></div>
+                      <div class="media-body">
+                        <div class="question-content">
+                          <textarea class="form-control"></textarea>
+                          <div class="element">
+                            <a href="" class="btn btn-default inline-block middle" data-toggle="modal" data-target="#image-modal">
+                              <img src="../img/image.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">画像</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle" href="" data-toggle="modal" data-target="#movie-modal">
+                              <img src="../img/movie.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">動画</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle" href="" data-toggle="modal" data-target="#slide-modal">
+                              <img src="../img/slide.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">スライド</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle" href="" data-toggle="modal" data-target="#code-modal">
+                              <img src="../img/programming.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">コード</div>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/image.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">画像を挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="well">
+                                      <img src="../img/image.png" width="60">
+                                      <div class="text">
+                                        ここにファイルをドロップまたはクリック（5MBまでアップロード可能）
+                                      </div>
+                                      <a style="cursor: pointer;">またはURL</a>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="movie-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/movie.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">動画を挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <textarea class="form-control" placeholder="追加する動画の埋め込みタグを入力" style="height: 80px; width: 100%; overflow: hidden; word-wrap: break-word;"></textarea>
+                                    <div class="repletion right">
+                                      ※ youtube, vimeo, channnel9 に対応
+                                    </div>
+                                    <div class="clear"></div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="slide-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/slide.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">スライドを挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <textarea class="form-control" placeholder="追加するスライドの埋め込みタグを入力" style="height: 80px; width: 100%; overflow: hidden; word-wrap: break-word;"></textarea>
+                                    <div class="repletion right">
+                                      ※ slideshare, speakerdeck に対応
+                                    </div>
+                                    <div class="clear"></div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="code-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/programming.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">コードを挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <textarea class="form-control" placeholder="コードを入力" style="height: 80px; width: 100%; overflow: hidden; word-wrap: break-word;"></textarea>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Modal -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media answer">
+                      <div class="media-left title">解答 <i class="fa fa-arrow-right"></i></div>
+                      <div class="media-body">
+                        <div class="answer-content">
+                          <div class="element">
+                            <a class="btn btn-default inline-block middle text active" href="">
+                              <img src="../img/text.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">テキスト</div>
+                            </a>
+                            <a href="" class="btn btn-default inline-block middle image">
+                              <img src="../img/image.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">画像</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle code" href="">
+                              <img src="../img/programming.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">コード</div>
+                            </a>
+                          </div>
+                          <div class="text-box disabled">
+                            <div class="box a-box">
+                              <input type="radio" name="q1" id="a1" checked="checked"/>
+                              <label for="a1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                            <div class="box b-box">
+                              <input type="radio" name="q1" id="b1"/>
+                              <label for="b1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                            <div class="box c-box">
+                              <input type="radio" name="q1" id="c1"/>
+                              <label for="c1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                            <div class="box d-box">
+                              <input type="radio" name="q1" id="d1"/>
+                              <label for="d1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="edit right">
+                            <button class="btn btn-default inline-block middle cancel disabled">
+                              キャンセル
+                            </button>
+                            <button class="btn btn-success inline-block middle save disabled">
+                              保存する
+                            </button>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media explanation">
+                      <div class="media-left title">解説 <i class="fa fa-arrow-right"></i></div>
+                      <div class="media-body">
+                        <div class="explanation-content">
+                          <div class="element">
+                            <a href="" class="btn btn-default inline-block middle link">
+                              <img src="../img/url.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">リンク</div>
+                            </a>
+                            <a href="" class="btn btn-default inline-block middle image">
+                              <img src="../img/image.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">画像</div>
+                            </a>
+                            <a href="" class="btn btn-default inline-block middle movie">
+                              <img src="../img/movie.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">動画</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle code" href="">
+                              <img src="../img/programming.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">コード</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle slide" href="">
+                              <img src="../img/slide.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">スライド</div>
+                            </a>
+                          </div>
+                          <textarea class="form-control"></textarea>
+                          <div class="edit right">
+                            <button class="btn btn-default inline-block middle cancel disabled">
+                              キャンセル
+                            </button>
+                            <button class="btn btn-success inline-block middle save disabled">
+                              保存する
+                            </button>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quize">
+                    <div class="media question">
+                      <div class="media-left title">Q2 <i class="fa fa-arrow-right"></i></div>
+                      <div class="media-body">
+                        <div class="question-content">
+                          <textarea class="form-control"></textarea>
+                          <div class="element">
+                            <a href="" class="btn btn-default inline-block middle" data-toggle="modal" data-target="#image-modal">
+                              <img src="../img/image.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">画像</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle" href="" data-toggle="modal" data-target="#movie-modal">
+                              <img src="../img/movie.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">動画</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle" href="" data-toggle="modal" data-target="#slide-modal">
+                              <img src="../img/slide.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">スライド</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle" href="" data-toggle="modal" data-target="#code-modal">
+                              <img src="../img/programming.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">コード</div>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/image.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">画像を挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="well">
+                                      <img src="../img/image.png" width="60">
+                                      <div class="text">
+                                        ここにファイルをドロップまたはクリック（5MBまでアップロード可能）
+                                      </div>
+                                      <a style="cursor: pointer;">またはURL</a>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="movie-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/movie.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">動画を挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <textarea class="form-control" placeholder="追加する動画の埋め込みタグを入力" style="height: 80px; width: 100%; overflow: hidden; word-wrap: break-word;"></textarea>
+                                    <div class="repletion right">
+                                      ※ youtube, vimeo, channnel9 に対応
+                                    </div>
+                                    <div class="clear"></div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="slide-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/slide.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">スライドを挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <textarea class="form-control" placeholder="追加するスライドの埋め込みタグを入力" style="height: 80px; width: 100%; overflow: hidden; word-wrap: break-word;"></textarea>
+                                    <div class="repletion right">
+                                      ※ slideshare, speakerdeck に対応
+                                    </div>
+                                    <div class="clear"></div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="code-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/programming.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">コードを挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <textarea class="form-control" placeholder="コードを入力" style="height: 80px; width: 100%; overflow: hidden; word-wrap: break-word;"></textarea>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Modal -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media answer">
+                      <div class="media-left title">解答 <i class="fa fa-arrow-right"></i></div>
+                      <div class="media-body">
+                        <div class="answer-content">
+                          <div class="element">
+                            <a class="btn btn-default inline-block middle text active" href="">
+                              <img src="../img/text.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">テキスト</div>
+                            </a>
+                            <a href="" class="btn btn-default inline-block middle image">
+                              <img src="../img/image.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">画像</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle code" href="">
+                              <img src="../img/programming.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">コード</div>
+                            </a>
+                          </div>
+                          <div class="text-box disabled">
+                            <div class="box a-box">
+                              <input type="radio" name="q1" id="a1" checked="checked"/>
+                              <label for="a1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                            <div class="box b-box">
+                              <input type="radio" name="q1" id="b1"/>
+                              <label for="b1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                            <div class="box c-box">
+                              <input type="radio" name="q1" id="c1"/>
+                              <label for="c1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                            <div class="box d-box">
+                              <input type="radio" name="q1" id="d1"/>
+                              <label for="d1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="edit right">
+                            <button class="btn btn-default inline-block middle cancel disabled">
+                              キャンセル
+                            </button>
+                            <button class="btn btn-success inline-block middle save disabled">
+                              保存する
+                            </button>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media explanation">
+                      <div class="media-left title">解説 <i class="fa fa-arrow-right"></i></div>
+                      <div class="media-body">
+                        <div class="explanation-content">
+                          <div class="element">
+                            <a href="" class="btn btn-default inline-block middle link">
+                              <img src="../img/url.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">リンク</div>
+                            </a>
+                            <a href="" class="btn btn-default inline-block middle image">
+                              <img src="../img/image.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">画像</div>
+                            </a>
+                            <a href="" class="btn btn-default inline-block middle movie">
+                              <img src="../img/movie.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">動画</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle code" href="">
+                              <img src="../img/programming.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">コード</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle slide" href="">
+                              <img src="../img/slide.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">スライド</div>
+                            </a>
+                          </div>
+                          <textarea class="form-control"></textarea>
+                          <div class="edit right">
+                            <button class="btn btn-default inline-block middle cancel disabled">
+                              キャンセル
+                            </button>
+                            <button class="btn btn-success inline-block middle save disabled">
+                              保存する
+                            </button>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="backbone">
+                <div class="quizzes">
+                  <div class="quize">
+                    <div class="media question">
+                      <div class="media-left title">Q1 <i class="fa fa-arrow-right"></i></div>
+                      <div class="media-body">
+                        <div class="question-content">
+                          <textarea class="form-control"></textarea>
+                          <div class="element">
+                            <a href="" class="btn btn-default inline-block middle" data-toggle="modal" data-target="#image-modal">
+                              <img src="../img/image.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">画像</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle" href="" data-toggle="modal" data-target="#movie-modal">
+                              <img src="../img/movie.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">動画</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle" href="" data-toggle="modal" data-target="#slide-modal">
+                              <img src="../img/slide.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">スライド</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle" href="" data-toggle="modal" data-target="#code-modal">
+                              <img src="../img/programming.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">コード</div>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/image.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">画像を挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="well">
+                                      <img src="../img/image.png" width="60">
+                                      <div class="text">
+                                        ここにファイルをドロップまたはクリック（5MBまでアップロード可能）
+                                      </div>
+                                      <a style="cursor: pointer;">またはURL</a>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="movie-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/movie.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">動画を挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <textarea class="form-control" placeholder="追加する動画の埋め込みタグを入力" style="height: 80px; width: 100%; overflow: hidden; word-wrap: break-word;"></textarea>
+                                    <div class="repletion right">
+                                      ※ youtube, vimeo, channnel9 に対応
+                                    </div>
+                                    <div class="clear"></div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="slide-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/slide.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">スライドを挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <textarea class="form-control" placeholder="追加するスライドの埋め込みタグを入力" style="height: 80px; width: 100%; overflow: hidden; word-wrap: break-word;"></textarea>
+                                    <div class="repletion right">
+                                      ※ slideshare, speakerdeck に対応
+                                    </div>
+                                    <div class="clear"></div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="code-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/programming.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">コードを挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <textarea class="form-control" placeholder="コードを入力" style="height: 80px; width: 100%; overflow: hidden; word-wrap: break-word;"></textarea>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Modal -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media answer">
+                      <div class="media-left title">解答 <i class="fa fa-arrow-right"></i></div>
+                      <div class="media-body">
+                        <div class="answer-content">
+                          <div class="element">
+                            <a class="btn btn-default inline-block middle text active" href="">
+                              <img src="../img/text.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">テキスト</div>
+                            </a>
+                            <a href="" class="btn btn-default inline-block middle image">
+                              <img src="../img/image.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">画像</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle code" href="">
+                              <img src="../img/programming.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">コード</div>
+                            </a>
+                          </div>
+                          <div class="text-box disabled">
+                            <div class="box a-box">
+                              <input type="radio" name="q1" id="a1" checked="checked"/>
+                              <label for="a1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                            <div class="box b-box">
+                              <input type="radio" name="q1" id="b1"/>
+                              <label for="b1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                            <div class="box c-box">
+                              <input type="radio" name="q1" id="c1"/>
+                              <label for="c1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                            <div class="box d-box">
+                              <input type="radio" name="q1" id="d1"/>
+                              <label for="d1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="edit right">
+                            <button class="btn btn-default inline-block middle cancel disabled">
+                              キャンセル
+                            </button>
+                            <button class="btn btn-success inline-block middle save disabled">
+                              保存する
+                            </button>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media explanation">
+                      <div class="media-left title">解説 <i class="fa fa-arrow-right"></i></div>
+                      <div class="media-body">
+                        <div class="explanation-content">
+                          <div class="element">
+                            <a href="" class="btn btn-default inline-block middle link">
+                              <img src="../img/url.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">リンク</div>
+                            </a>
+                            <a href="" class="btn btn-default inline-block middle image">
+                              <img src="../img/image.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">画像</div>
+                            </a>
+                            <a href="" class="btn btn-default inline-block middle movie">
+                              <img src="../img/movie.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">動画</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle code" href="">
+                              <img src="../img/programming.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">コード</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle slide" href="">
+                              <img src="../img/slide.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">スライド</div>
+                            </a>
+                          </div>
+                          <textarea class="form-control"></textarea>
+                          <div class="edit right">
+                            <button class="btn btn-default inline-block middle cancel disabled">
+                              キャンセル
+                            </button>
+                            <button class="btn btn-success inline-block middle save disabled">
+                              保存する
+                            </button>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="aws">
+                <div class="quizzes">
+                  <div class="quize">
+                    <div class="media question">
+                      <div class="media-left title">Q1 <i class="fa fa-arrow-right"></i></div>
+                      <div class="media-body">
+                        <div class="question-content">
+                          <textarea class="form-control"></textarea>
+                          <div class="element">
+                            <a href="" class="btn btn-default inline-block middle" data-toggle="modal" data-target="#image-modal">
+                              <img src="../img/image.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">画像</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle" href="" data-toggle="modal" data-target="#movie-modal">
+                              <img src="../img/movie.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">動画</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle" href="" data-toggle="modal" data-target="#slide-modal">
+                              <img src="../img/slide.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">スライド</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle" href="" data-toggle="modal" data-target="#code-modal">
+                              <img src="../img/programming.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">コード</div>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/image.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">画像を挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="well">
+                                      <img src="../img/image.png" width="60">
+                                      <div class="text">
+                                        ここにファイルをドロップまたはクリック（5MBまでアップロード可能）
+                                      </div>
+                                      <a style="cursor: pointer;">またはURL</a>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="movie-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/movie.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">動画を挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <textarea class="form-control" placeholder="追加する動画の埋め込みタグを入力" style="height: 80px; width: 100%; overflow: hidden; word-wrap: break-word;"></textarea>
+                                    <div class="repletion right">
+                                      ※ youtube, vimeo, channnel9 に対応
+                                    </div>
+                                    <div class="clear"></div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="slide-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/slide.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">スライドを挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <textarea class="form-control" placeholder="追加するスライドの埋め込みタグを入力" style="height: 80px; width: 100%; overflow: hidden; word-wrap: break-word;"></textarea>
+                                    <div class="repletion right">
+                                      ※ slideshare, speakerdeck に対応
+                                    </div>
+                                    <div class="clear"></div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="code-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      <img src="../img/programming.png" width="22" class="inline-block middle">
+                                      <div class="inline-block middle">コードを挿入</div>
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <textarea class="form-control" placeholder="コードを入力" style="height: 80px; width: 100%; overflow: hidden; word-wrap: break-word;"></textarea>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                                    <button type="button" class="btn btn-success">挿入する</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Modal -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media answer">
+                      <div class="media-left title">解答 <i class="fa fa-arrow-right"></i></div>
+                      <div class="media-body">
+                        <div class="answer-content">
+                          <div class="element">
+                            <a class="btn btn-default inline-block middle text active" href="">
+                              <img src="../img/text.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">テキスト</div>
+                            </a>
+                            <a href="" class="btn btn-default inline-block middle image">
+                              <img src="../img/image.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">画像</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle code" href="">
+                              <img src="../img/programming.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">コード</div>
+                            </a>
+                          </div>
+                          <div class="text-box disabled">
+                            <div class="box a-box">
+                              <input type="radio" name="q1" id="a1" checked="checked"/>
+                              <label for="a1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                            <div class="box b-box">
+                              <input type="radio" name="q1" id="b1"/>
+                              <label for="b1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                            <div class="box c-box">
+                              <input type="radio" name="q1" id="c1"/>
+                              <label for="c1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                            <div class="box d-box">
+                              <input type="radio" name="q1" id="d1"/>
+                              <label for="d1">
+                                <textarea class="form-control"></textarea>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="edit right">
+                            <button class="btn btn-default inline-block middle cancel disabled">
+                              キャンセル
+                            </button>
+                            <button class="btn btn-success inline-block middle save disabled">
+                              保存する
+                            </button>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media explanation">
+                      <div class="media-left title">解説 <i class="fa fa-arrow-right"></i></div>
+                      <div class="media-body">
+                        <div class="explanation-content">
+                          <div class="element">
+                            <a href="" class="btn btn-default inline-block middle link">
+                              <img src="../img/url.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">リンク</div>
+                            </a>
+                            <a href="" class="btn btn-default inline-block middle image">
+                              <img src="../img/image.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">画像</div>
+                            </a>
+                            <a href="" class="btn btn-default inline-block middle movie">
+                              <img src="../img/movie.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">動画</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle code" href="">
+                              <img src="../img/programming.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">コード</div>
+                            </a>
+                            <a class="btn btn-default inline-block middle slide" href="">
+                              <img src="../img/slide.png" width="16" class="inline-block middle">
+                              <div class="inline-block middle">スライド</div>
+                            </a>
+                          </div>
+                          <textarea class="form-control"></textarea>
+                          <div class="edit right">
+                            <button class="btn btn-default inline-block middle cancel disabled">
+                              キャンセル
+                            </button>
+                            <button class="btn btn-success inline-block middle save disabled">
+                              保存する
+                            </button>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

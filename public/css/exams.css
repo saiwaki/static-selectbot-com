@@ -155,6 +155,140 @@
   bottom: -1px;
 }
 
+/* edit-quize */
+.edit-quize .nav-tabs-content{
+  margin-top: 30px;
+}
+.edit-quize .nav-tabs > li > a{
+  margin-right: 6px;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  padding: 8px 15px;
+}
+.edit-quize .nav > li > a:hover, .nav > li > a:focus{
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+.edit-quize .nav > li.active > a:hover, .nav > li.active > a:focus{
+  background-color: #fff;
+  border-bottom-color: transparent;
+}
+.edit-quize .quize{
+  padding: 15px 0px;
+  border-bottom: 1px solid #ddd;
+}
+.edit-quize .quize .media{
+  padding: 15px;
+  box-sizing: border-box;
+}
+.edit-quize .quize .media-left{
+  width: 7%;
+}
+.edit-quize .quize .media-body{
+  width: 93%;
+}
+.edit-quize .quize .title{
+  font-size: 18px;
+  font-weight: 600;
+  color: #3C9A43;
+  position: relative;
+}
+.edit-quize .quize .element a.btn{
+  margin-right: 5px;
+}
+.edit-quize .quize .edit .btn{
+  font-size: 12px;
+}
+.edit-quize .quize .edit .btn.cancel{
+  margin-right: 5px;
+}
+.edit-quize .quize .question-content{
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+.edit-quize .quize .question-content textarea{
+  min-height: 120px;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.edit-quize .quize .question-content .element{
+  font-size: 12px;
+  margin-top: 15px;
+}
+.edit-quize .quize .question-content #image-modal .well{
+  padding: 38px 19px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+  text-align: center;
+  font-weight: 600;
+  color: #aaa;
+  cursor: pointer;
+}
+.edit-quize .quize .question-content #image-modal .well img{
+  opacity: 0.5;
+}
+.edit-quize .quize .question-content .repletion{
+  font-size: 13px;
+  margin-top: 4px;
+}
+.edit-quize .quize .answer-content{
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+.edit-quize .quize .answer-content .element{
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.edit-quize .quize .answer-content .text-box{
+  font-size: 0;
+  position: relative;
+}
+.edit-quize .quize .answer-content .text-box *{
+  font-size: 14px;
+}
+.edit-quize .quize .answer-content .text-box .box{
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+}
+.edit-quize .quize .answer-content .text-box .box:nth-child(2n-1){
+  padding-right: 10px;
+}
+.edit-quize .quize .answer-content .text-box .box:nth-child(2n){
+  padding-left: 10px;
+}
+.edit-quize .quize .answer-content .text-box .box label{
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 0px;
+}
+.edit-quize .quize .answer-content .text-box .box label textarea{
+  max-width: 100%;
+  min-height: 80px;
+  max-height: 100px;
+}
+.edit-quize .quize .explanation-content{
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+.edit-quize .quize .explanation-content textarea{
+  min-height: 120px;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-bottom: 15px;
+}
+.edit-quize .quize .explanation-content .element{
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
 /* edit-information */
 
 .edit-information .exams-element{
@@ -263,13 +397,13 @@
 .edit-insight td.panswer{
   width: 12%;
   font-weight: 600;
-  color: #3c9a43;
+  color: #3c5b9a;
 }
 .edit-insight td.panswer.high{
-  color: #da3b30;
+  color: #3c9a43;
 }
 .edit-insight td.panswer.low{
-  color: #3c5b9a;
+  color: #da3b30;
 }
 .edit-insight td.panswer .num{
   font-size: 16px;

@@ -81,7 +81,7 @@ th, td{
   padding: 0px 10px;
   box-sizing: border-box;
   position: relative;
-  z-index: 9999;
+  z-index: 9998;
   border-bottom: 1px solid #ddd;
 }
 #header .header-left{
@@ -111,6 +111,50 @@ th, td{
 .new-btn:hover{
   color: #fff;
   background-color: #5973a9;
+}
+.btn{
+  -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+  padding: 6px 12px;
+  border-radius: 2px;
+  position: relative;
+}
+.btn.disabled{
+  opacity: 0.5;
+}
+.btn:focus{
+  outline: none;
+}
+.btn-default, .btn-default.disabled:hover{
+  color: #555;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+}
+.btn-default:hover{
+  background: #efefef;
+  border-color: #999;
+  color: #333;
+}
+.btn-default.active{
+  border: 1px solid #999;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(0,0,0,0.1);
+  box-shadow: inset 0px 1px 0px rgba(0,0,0,0.1);
+  background-color: #eaeaea;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.btn-success, .btn-success.disabled:hover{
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5),0 1px 0 rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5),0 1px 0 rgba(0,0,0,.08);
+  color: #fff;
+  border: 1px solid #2d7632;
+  background: #59a95f;
+}
+.btn-success:hover{
+  background: #3c9a43;
+  color: #fff;
 }
 
 #main{
