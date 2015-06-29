@@ -82,6 +82,11 @@
   color: #2D7632;
   margin-bottom: 5px;
 }
+.question-box img{
+  display: block;
+  margin: 5px auto 0px;
+  width: 300px;
+}
 .answer-box{
   font-size: 0px;
   padding-top: 30px;
@@ -112,6 +117,15 @@
 .answer .inner label{
   padding-left: 30px;
   font-size: 16px;
+}
+.answer .inner .img{
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 10px 0px 5px;
+}
+.answer .inner .img img{
+  width: 100%;
+  display: block;
 }
 
 #footer{
